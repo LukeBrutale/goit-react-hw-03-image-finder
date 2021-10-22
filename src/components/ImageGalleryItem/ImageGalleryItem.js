@@ -10,7 +10,6 @@ export default function ImageGalleryItem({
     <li
       className={s.imageGalleryItem}
       onClick={() => onSetImg(largeImageURL, tags)}
-      // onClick={onSetImg(largeImageURL, tags)}
     >
       <img
         src={webformatURL}

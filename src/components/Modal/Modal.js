@@ -5,7 +5,6 @@ export default class Modal extends Component {
   componentDidMount() {
     window.addEventListener("keydown", this.handleKeyDown);
   }
-  //ОБЯЗАТЕЛЬНО снимаем слушатель и handleKeyDown()
   componentWillUnmount() {
     window.removeEventListener("keydown", this.handleKeyDown);
   }

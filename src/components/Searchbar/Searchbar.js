@@ -3,11 +3,9 @@ import { ImSearch } from "react-icons/im";
 import s from "./SearchBar.module.css";
 class Searchbar extends Component {
   state = { searchQuery: "" };
-  //записываем в state запрос
   hendleQueryChange = (event) => {
     this.setState({ searchQuery: event.currentTarget.value.toLowerCase() });
   };
-  //делаем проверку на пустоту запроса, передаем значение state в Арр и чистим state
   hendleSubmit = (event) => {
     event.preventDefault();
     if (this.state.searchQuery.trim() === "") {

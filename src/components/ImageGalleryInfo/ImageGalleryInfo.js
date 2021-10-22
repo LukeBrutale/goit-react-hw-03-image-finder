@@ -63,7 +63,6 @@ class ImageGalleryInfo extends Component {
             });
             return;
           }
-          /*this.setState((prevState) => ({... - смотреть конспект занятие 3 -> 3.5. setState с функцией и лекция Наташи 0:40:30*/
           this.setState((prevState) => ({
             images: [...prevState.images, ...images.hits],
             status: Status.RESOLVED,
@@ -78,7 +77,6 @@ class ImageGalleryInfo extends Component {
             error: {
               message: `No pictures with the name ${query}`,
             },
-            // error,
             status: Status.REJECTED,
           })
         );
